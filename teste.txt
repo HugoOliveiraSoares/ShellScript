@@ -1,0 +1,36 @@
+Sist. Arq.      Tam. Usado Disp. Uso% Montado em
+udev            3,9G     0  3,9G   0% /dev
+tmpfs           788M  2,0M  786M   1% /run
+/dev/sda1       916G   67G  803G   8% /
+tmpfs           3,9G   21M  3,9G   1% /dev/shm
+tmpfs           5,0M  4,0K  5,0M   1% /run/lock
+tmpfs           3,9G     0  3,9G   0% /sys/fs/cgroup
+/dev/loop3      256K  256K     0 100% /snap/gtk2-common-themes/5
+/dev/loop13     2,3M  2,3M     0 100% /snap/gnome-calculator/260
+/dev/loop5      3,8M  3,8M     0 100% /snap/gnome-system-monitor/57
+/dev/loop11      79M   79M     0 100% /snap/scrcpy/136
+/dev/loop10      35M   35M     0 100% /snap/gtk-common-themes/818
+/dev/loop12      13M   13M     0 100% /snap/gnome-characters/139
+/dev/loop15      91M   91M     0 100% /snap/core/6350
+/dev/loop16     3,8M  3,8M     0 100% /snap/gnome-system-monitor/100
+/dev/loop14      15M   15M     0 100% /snap/gnome-logs/45
+/dev/loop17     1,0M  1,0M     0 100% /snap/gnome-logs/61
+/dev/loop8      928M  928M     0 100% /snap/android-studio/77
+/dev/loop2      150M  150M     0 100% /snap/gnome-3-28-1804/67
+/dev/loop18      81M   81M     0 100% /snap/audacity/408
+/dev/loop7       15M   15M     0 100% /snap/gnome-characters/296
+/dev/loop1      141M  141M     0 100% /snap/gnome-3-26-1604/90
+/dev/loop9       43M   43M     0 100% /snap/gtk-common-themes/1313
+/dev/loop6      4,2M  4,2M     0 100% /snap/gnome-calculator/406
+/dev/loop0       55M   55M     0 100% /snap/core18/1066
+/dev/loop4       89M   89M     0 100% /snap/core/7270
+/dev/loop19     141M  141M     0 100% /snap/gnome-3-26-1604/74
+/dev/loop20     182M  182M     0 100% /snap/spotify/36
+tmpfs           788M   16K  788M   1% /run/user/121
+tmpfs           788M   60K  787M   1% /run/user/1000, /n-----------------------------------------------------------------------, Comandos.sh
+EntradaDados.sh
+OlaMundo.sh
+teste.txt
+Test.sh
+TomadaDecisão.sh
+Variaveis.sh
