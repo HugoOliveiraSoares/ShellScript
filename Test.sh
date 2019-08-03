@@ -4,4 +4,4 @@
 sysinfo=`df -h`
 sysinfo1=`ls`
 #echo "$sysinfo"
-echo > teste.txt "$sysinfo"
+echo -e > teste.txt "$sysinfo\n\n$sysinfo1"
