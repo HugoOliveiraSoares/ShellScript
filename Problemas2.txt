@@ -1,0 +1,30 @@
+-Conectando a um servidor via ssh.
+R.: ssh usuario@ip_server --> ssh root@192.168.0.105
+
+-Precisamos adicionar um usuario no sistema.
+R.: adduser nome_usuario
+
+-Precisamos remover um usuario no sistema.
+R.: 
+
+-Data e hora que esta rodando o server
+R.: date
+
+-Usuario que esta utilizando a maquina
+R.: whoami
+
+-Alternar usuario
+R.: su nome_usuario
+
+-Verificar processos do server
+R.: free -m --> memoria
+	top --> processos rodando
+
+-Ver arquivos de logs
+R.: tail -f /var/log/apache2/acces.log --> (ou outros arquivos)
+
+-Ajuda ao sistema, ferramentas para realizar funções
+R.: apropos
+
+-Manual da ferramenta
+R.: man ferramenta
