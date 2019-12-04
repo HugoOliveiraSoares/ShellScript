@@ -1,0 +1,42 @@
+Filtragem de dados ==============================================
+Problema1 -----------------------------------------------------
+uname -a --> mostra informações do computador
+
+Objetivo: nome do computador, versão do Kernel e arquitetura
+Adicional mostrar um em cada linha
+
+Resolução:
+uname -a | cut -d" " -f2,3,14 | tr " " "\n"
+
+Problema2 -----------------------------------------------------
+ifconfig --> informações da placa de rede
+
+Objetivo: Ip da maquina
+
+Resolução:
+ifconfig | grep broadcast | cut -d" " -f10
+
+Problema3 -----------------------------------------------------
+Entrada de dados: cat /proc/meminfo
+Objetivo: memoria total e memoria livre.
+Adicional: Em subtração para obter a memoria em uso.
+
+Problema4 -----------------------------------------------------
+Entrada de dados: cat /proc/modules
+Objetivo: Nomes e endereços de memoria.
+Adicional: Lista de nomes, seguida da lista de endereços de baixo para cima
+
+Resolução:
+a="$(cat /proc/modules | cut -d" " -f1-6)";
+ echo $a | tr " " "\n" | grep -v "0x00";
+ echo $a | tr " " "\n" | grep "0x00" | tac
+
+Problema5 -----------------------------------------------------
+Entrada de dados: nmap -sS -sV -F scanme.nmap.org
+Objetivo: Portas e serviços
+
+Resolução:
+a="$(sudo nmap -sS -sV -F scanme.nmap.org | grep "open" | tr "\n" ":")";
+ echo $a | tr ":" "\n" | cut -d"/" -f1 > t1;
+ echo $a | tr ":" "\n" | cut -d" " -f2 | cut -d" " -f4-99 > t2;
+ paste t1 t2; rm t1 t2
