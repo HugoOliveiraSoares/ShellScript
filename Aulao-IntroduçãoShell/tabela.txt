@@ -1,0 +1,49 @@
+grep = expressões simples
+egrep = simples e avançadas
+fgrep = Não pode ser usado para expressões regulares Buscas literais.
+======
+\ = o caractere após deve ser interpretado como literal
+^ = indicar início de uma linha
+$ = final de uma linha
+? = zero ou uma ocorrência
+* = zero ou uma ou mais ocorrência
++ = pelo menos uma ou mais ocorrências
+(vermelho|azul) = OU
+a{2} = 2 ocorrencias da letra a
+a{2,5} = 2 até 5.
+[aeiou] = todos sao validos pra busca
+[a-z] = intervalo de a-z (range)
+[0-9] = intervalo 0 a 9 (range)
+[^abc]= qualquer caractere menos a,b,c sao validos
+/palavra/ = a palavra deve estar separada por espaço
+. = qualquer caracter e valido, menos blank line
+=========================
+
+cat /etc/passwd | grep user
+grep user /etc/passwd
+
+-i = uppercase ou lowercase
+
+-v INVERTE A PROCURA
+
+grep “bash$” /etc/passwd (lista usuario que usam bash)
+grep -v “bash$” /etc/passwd (lista usuario que nao usam bash)
+
+FILTRA ENDEREÇO IP
+
+egrep “[0-9]{3}\.[0-9]{3}\.[0-9]{3}\.[0-9]{3}” log
+
+Outros exemplos:
+
+egrep “[bB]*”
+egrep “[bB]+”
+egrep “^[bB]”
+egrep “^[^bB]”
+
+Argumentos:
+
+$0 retorna nome do script
+$# quantidade de argumentos
+$1 retorna 1 argumento informado
+$2 segundo argumento
+$? código de retorno do último argumento
