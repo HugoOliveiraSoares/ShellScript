@@ -1,7 +1,7 @@
 Comandos =======================================================================================================
 cat arquivo.txt --> le o arquivo | -n mostra o numero de linhas
 head arquivo.txt --> le as 10 primeiras linhas | -n numero de linhas ; -c numero de caracteres
-tail arquivo.txt --> le as 10 ultimas linhas | -n numero de linhas ; -c numero de caracteres
+tail arquivo.txt --> le as 10 ultimas linhas | -n numero de linhas ; -c numero de caracteres ; -f monitora o arquivo
 
 Filtros ========================================================================================================
 grep "string" arquivo --> encontra linhas que contenham uma string epecifica | -v linhas que não tenham a string
